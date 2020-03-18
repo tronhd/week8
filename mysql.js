@@ -50,3 +50,17 @@ function order1(){
     console.log("error");
   }
  };
+
+//  function seeStock(){
+//   var input = document.getElementById('userInput').value;
+//   var valid = false;
+//   for(var i=0; i<fruits.length; i++) {
+//     if(input==fruits[i][0]){
+//       console.log(fruits[i][1]);
+//       valid = true;
+//     } 
+//   } 
+//   if(!valid) {
+//     console.log('try again!');
+//   }
+//  }
