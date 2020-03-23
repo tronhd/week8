@@ -10,42 +10,30 @@
 var menu=[
   ["waffle fries", 50],
   ["blizzard", 70],
-  ["cheessy gordita crunch", 70],
+  ["cheesy gordita crunch", 70],
   ["cheese burger", 60],
-  ["cookout style burgers", 60],
+  ["cookout style burger", 60],
   ["sweet tea", 40],
   ["cheese curds", 50],
   ["mcgriddle", 40],
-  ["chick-fil-A nuggets", 1000],
+  ["chick-fil-a nuggets", 1000],
   ["ultimate fondue", 13]
 ];
 
-//var order = document.getElementById("order");
 
-// function myPrimeFunction(){
-//  myPrime = setInterval(function(){ displayPrime("first parameter");}, 3000);
-// }
-
-// function order1(){
-//    if(document.getElementById("userInput")==menu[i][i]){
-//      document.getElementById("demo").innerHTML;
-//    } else{
-//      console.log("error");
-//    }
-//   };
 
 function order(){
-var input = document.getElementById('userInput').value;
-var valid = false;
-for(var i=0; i<menu.length; i++) {
-  if(input==menu[i][0]){
-    console.log(menu[i][0]);
-    valid = true;
-  } 
-} 
-if(!valid) {
-  console.log('try again!');
-}
+ var input = document.getElementById('userInput').value;
+ var valid = false;
+ for(var i=0; i<menu.length; i++) {
+   if(input==menu[i][0]){
+     document.getElementById("demo").innerHTML += menu[i][0] +" , ";
+     valid = true;
+   } 
+ } 
+ if(!valid) {
+   console.log('try again!');
+ }
 }
 
 // Exercise 2
